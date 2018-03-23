@@ -5,8 +5,16 @@
     <title>Angular with webpack</title>
 </head>
 <body ng-app="demoApp">
+
     <h1>Demo App</h1>
     {{ 'hello' + ' ' + 'world' }}
+
+    <div ng-controller="HomeController">
+        <ul>
+            <li ng-repeat="name in names">{{name}}</li>
+        </ul>
+    </div>
+
     <script src="app.bundle.js"></script>
 </body>
 </html>
