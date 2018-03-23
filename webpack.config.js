@@ -10,7 +10,7 @@ const indexHtml = path.join(__dirname, "src", "index.html")
 
 module.exports = {
     entry: {
-        app: "./src/main.ts"
+        app: [ "./src/main.ts" ]
     },
     output: {
         path: path.resolve(__dirname, "dist"),
@@ -65,5 +65,8 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(["dist"])
-    ]
+    ],
+    performance: {
+        hints: false
+    }
 }

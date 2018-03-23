@@ -8,9 +8,8 @@
   "scripts": {
     "clean": "rimraf dist yarn-error.log",
     "refresh": "rimraf node_modules && yarn install",
-    "build:dev": "npx webpack --mode development --config webpack.dev.js",
-    "build:prod": "npx webpack --mode production --config webpack.prod.js",
-    "dev": "open dist/index.html"
+    "build": "npx webpack --mode production --config webpack.prod.js",
+    "dev": "node webpack.devserver.js"
   },
   "dependencies": {
     "angular": "^1.6.9",
