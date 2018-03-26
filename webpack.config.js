@@ -3,7 +3,6 @@ const path = require("path")
 const webpack = require("webpack")
 
 // webpack plugins
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin")
 const CleanWebpackPlugin = require("clean-webpack-plugin")
 
 const indexHtml = path.join(__dirname, "src", "index.html")
