@@ -4,16 +4,12 @@
     <meta charset="utf-8">
     <title>Angular with webpack</title>
 </head>
-<body ng-app="demoApp">
+<body ng-app="angular-starter">
+    <h1>Angular Starter</h1>
 
-    <h1>Demo App</h1>
-    {{ 'hello' + ' ' + 'world' }}
-
-    <div ng-controller="HomeController">
-        <ul>
-            <li ng-repeat="name in names">{{name}}</li>
-        </ul>
-    </div>
+    <todo></todo>
+    <div ui-view></div>
+    <app-footer></app-footer>
 
     <script src="app.bundle.js"></script>
 </body>
